@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/noInternetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteCardColor">
+
+        <ImageView
+            android:id="@+id/backgorund"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:alpha="0.2"
+            app:srcCompat="@drawable/background"
+            app:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/no_internet_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="140dp"
+                app:srcCompat="@drawable/signal"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/no_internet_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Sambungan Tidak Terkoneksi"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textIsSelectable="true"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/no_internet_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Halaman ini tidak bisa ditampilkan, pastikan jaringan internet Anda terkoneksi dengan baik"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/try_again_button"
+                style="@style/IconCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_button_bk">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="Muat Ulang"
+                        android:textAlignment="center"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/InternetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteCardColor">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:alpha="0.2"
+            app:srcCompat="@drawable/background"
+            app:tint="@color/colorPrimary" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detail_kehadiran_shape"
+            style="@style/Rectanggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/titledetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/back"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Detail Kehadiran"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_kehadiran_shape"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                style="@style/IconCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Matakuliah"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/detail_matkul"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Dosen"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/detail_dosen"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Tanggal"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/detail_tanggal"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Jam Kuliah"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/detail_jam"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Ruangan"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/detail_ruangan"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/DarkText"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/absent"
+                        app:tint="#F44336" />
+
+                    <TextView
+                        android:id="@+id/ALPA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Test"
+                        android:textAlignment="center"
+                        android:textColor="#F44336"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

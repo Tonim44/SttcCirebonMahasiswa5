@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/listDivider" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/time"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="-27dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Time"
+            android:textColor="@color/DarkText"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/alpa"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textColor="#F44336"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hadir"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textColor="#4CAF50"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/belumisikehadiran"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textColor="#FFC107"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/belumdimulai"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textColor="#9E9A9A"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/study"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/list_mata_kuliah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="-27dp"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Matematika 2"
+            android:textColor="@color/DarkText"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/lecturer"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/list_nama_dosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="-27dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Nama Dosen"
+            android:textColor="@color/DarkText"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

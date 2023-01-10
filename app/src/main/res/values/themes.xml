@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SttcCirebonMahasiswa4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.SttcCirebonMahasiswa4.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.SttcCirebonMahasiswa4.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.SttcCirebonMahasiswa4.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="IconCard">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardElevation">7dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="Rectanggle">
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="cardElevation">7dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="155dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shadow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tittle_tugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Nama Tugas"
+            android:textColor="@color/DarkText"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/matakul_tugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="matakuliah"
+            android:textColor="@color/DarkText"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tanggal_dibuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="tanggal dibuat"
+            android:textColor="@color/DarkText"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-85dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/tugas" />
+
+    </LinearLayout>
+</RelativeLayout>

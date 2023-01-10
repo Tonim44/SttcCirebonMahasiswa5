@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9F8F4"
+        android:padding="5dp">
+
+        <TableLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#D9F8F4"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/table_matakuliah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:textColor="@color/DarkText" />
+
+            <TextView
+                android:id="@+id/table_dosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:textColor="#A1A0A0"/>
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:text=" "/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9F8F4"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/table_nilaimutlak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/DarkText" />
+
+
+        </TableLayout>
+
+    </TableRow>
+
+    </LinearLayout>

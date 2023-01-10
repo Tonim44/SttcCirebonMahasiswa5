@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "name": "PT. Adiva Sumber Solusi",
+      "vicinity": "Jl. Bahagia No. 52, Panjunan Kec. Lemahwungkuk, Kota. Cirebon",
+      "geometry": {
+        "location": {
+          "lat": -6.8860646,
+          "lng": 108.6176983
+        }}
+        }
+  ],
+  "status": "OK"
+}

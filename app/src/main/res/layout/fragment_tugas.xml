@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.isikehadiran.IsiKehadiranFragment" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:alpha="0.2"
+        app:srcCompat="@drawable/background"
+        app:tint="@color/colorPrimary" />
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/action_jadwal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:background="@color/colorPrimary">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="29dp"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:layout_marginBottom="27dp"-->
+<!--            android:src="@drawable/back" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tugas_tittle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="31dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:layout_marginEnd="30dp"-->
+<!--            android:layout_toEndOf="@+id/back"-->
+<!--            android:fontFamily="@font/open_sans_semibold"-->
+<!--            android:text="Tugas"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/whiteTextColor"-->
+<!--            android:textSize="25dp" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/tugas_perkuliahan"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/action_jadwal"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        tools:listitem="@layout/item_tugas">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="95dp"-->
+<!--        android:layout_below="@+id/tugas_perkuliahan"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:gravity="bottom" />-->
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_isikehadiran"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.isikehadiran.IsiKehadiranFragment"
+        android:label="Isi Kehadiran"
+        tools:layout="@layout/fragment_isikehadiran" />
+
+    <fragment
+        android:id="@+id/nav_tugas"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.tugas.TugasFragment"
+        android:label="Tugas"
+        tools:layout="@layout/fragment_tugas" />
+
+    <fragment
+        android:id="@+id/nav_pengumuman"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.pengumuman.PengumumanFragment"
+        android:label="Pengumuman"
+        tools:layout="@layout/fragment_pengumuman" />
+
+    <fragment
+        android:id="@+id/nav_krs"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.krs.KrsFragment"
+        android:label="KRS"
+        tools:layout="@layout/fragment_krs" />
+
+    <fragment
+        android:id="@+id/nav_khs"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.khs.KhsFragment"
+        android:label="KHS"
+        tools:layout="@layout/fragment_khs" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="id.ac.sttccirebon.mahasiswa.ui.logout.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout" />
+
+
+</navigation>
